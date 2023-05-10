@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --deep-dark: rgb(26, 26, 26);
+  --light-dark: rgb(79, 82, 92);
+  --light-blue: rgb(0, 132, 255);
+  --dark-blue: rgb(2, 84, 161);
+  --light: rgb(245, 245, 245);
+}
+
+body{
+  background-color: var(--light)
+}
+
+.App {
+
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+h1{
+  margin-bottom: 20px;
+  color: var(--light);
+  text-transform: uppercase;
+}
+
+.listbox {
+  width: 800px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 4px 4px 5px rgba(82, 82, 82, .4);
+  border-radius: 5px;
+}
+
+.header{
+  padding: 40px;
+  border-radius: 5px 5px 0 0;
+  background-image: linear-gradient(340deg, #045de9 0%, #09c6f9 100%);
+}
+
+
+.addbox input{
+  width: 80%;
+  padding: 10px 20px;
+  margin-right: 20px;
+  border: none;
+  border-radius: 5px;
+  color: var(--light-dark);
+  background-color: var(--light);
+}
+
+.addbox button{
+  padding: 10px 23px;
+  border: none;
+  border-radius: 5px;
+  color: var(--deep-blue);
+  background-color: var(--light);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color .3s, color .3s;
+  font-weight: bold;
+}
+
+.addbox button:hover{
+  color: #fff;
+  background-color: var(--light-dark);
+}
+
+.todolist{
+  padding: 20px 0;
+}
+
+.todolist h3{
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.cardbox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px;
+  padding-left: 20px;
+  list-style: none;
+  background-color: var(--light);
+}
+
+.cardbox .completed {
+  margin-right: 20px;
+}
+
+.cardbox button{
+  padding: 15px 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cardbox button:hover{
+  background-color: #ddd;
+}
+
+.edit{
+  font-weight: bold;
+  color: rgb(15, 179, 69);
+}
+
+.delete{
+  font-weight: bold;
+  color: tomato;
+}
+
+.tools input{
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.filterbox {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+}
+
+.filterbox select{
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  color: var(--light-dark);
+  background-color: var(--light);
+  font-weight: bold;
+  transition: background-color .3s, color .3s;
+}
+
+.filterbox option{
+  font-weight: bold;
+}
+
+.filterbox select:hover{
+  color: #fff;
+  background-color: var(--light-dark);
+}
+
